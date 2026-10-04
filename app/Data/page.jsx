@@ -1,9 +1,10 @@
-
+  const Today  = new Date();
+  const final = `${Today.getDate()} - ${Today.getMonth()+1} - ${Today.getFullYear()}`
 const Data = [
     {
         Moviename:'Aquaman',
         img:'/Aquaman.jpg',
-        date:'2 - 10 - 2026',
+        date:final,
         genre:'Action',
         Seats : [
   { seatNo: "A1", booked: false },

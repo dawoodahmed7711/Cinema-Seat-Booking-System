@@ -5,13 +5,13 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 const labelClass = "mb-1.5 block text-sm font-medium text-slate-700";
 const inputClass =
-  "w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-400 outline-none transition focus:border-[#b3202f] focus:ring-2 focus:ring-[#b3202f]/20";
+  "w-full rounded-lg border border-blue-600 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-400 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20";
 
 
 
  function BookingForm() {
   const router = useRouter();s
-    const {New ,  SeatNo ,  setseats ,  BookingDetails ,  seats  ,  settim ,  tech} = useContext(SystemContext);
+    const {New ,  SeatNo  ,  BookingDetails ,   tech} = useContext(SystemContext);
     const [FullName , setFullName] = useState("")
     const [Email , setEmail] = useState("")
     const [Moviename ,  setMoviename] = useState('')
@@ -147,10 +147,10 @@ const inputClass =
 
            
             <button onClick={()=>{Form;
-              router.push('/')
+              router.push('/Bookings')
             }}
               type="submit"
-              className="w-full rounded-lg bg-[#b3202f] py-3 font-semibold text-white transition hover:bg-[#961a27] focus:outline-none focus:ring-2 focus:ring-[#b3202f]/40 active:scale-[0.98]"
+              className="w-full rounded-lg bg-blue-600 py-3 font-semibold text-white transition hover:bg-[#961a27] focus:outline-none focus:ring-2 focus:ring-[#b3202f]/40 active:scale-[0.98]"
             >
               Book
             </button>

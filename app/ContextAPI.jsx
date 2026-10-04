@@ -39,13 +39,13 @@ export const SystemContext = createContext()
 
    function BookingDetails(data){
     setBookingData((prev)=>[...prev , data])
-    console.log(data)
+   
    }
 function PrintData(data){
     setPrint(data)
-    console.log(data)
+    
 }
-   console.log(Print)
+  
   return (
     <>
      <SystemContext value={{Name ,  Moviedetails ,  New ,  Seating ,  SeatNo ,  setBookingData ,  BookingDetails  ,  setseats ,  seats  ,  tech ,  BookingData ,  PrintData ,  Print}}>
