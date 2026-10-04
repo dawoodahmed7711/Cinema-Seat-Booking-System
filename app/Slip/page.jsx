@@ -54,7 +54,7 @@ export default function SlipPage() {
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <h1 className="font-serif text-xl sm:text-2xl text-slate-900 break-words">
-                  {Print.Moviename}
+                  {Print?.Moviename}
                 </h1>
                 <p className="mt-1 text-xs sm:text-sm text-slate-500">Action , Thrill</p>
               </div>
@@ -67,7 +67,7 @@ export default function SlipPage() {
             <div className="mt-4 sm:mt-5 divide-y divide-slate-100 border-t border-slate-200">
               <div className={rowClass}>
                 <span className={labelClass}>Booking ID</span>
-                <span className={valueClass}>BK-S{Print.SeatNo}</span>
+                <span className={valueClass}>BK-S{Print?.SeatNo}</span>
               </div>
               <div className={rowClass}>
                 <span className={labelClass}>Date</span>
@@ -83,11 +83,11 @@ export default function SlipPage() {
               </div>
               <div className={rowClass}>
                 <span className={labelClass}>Customer</span>
-                <span className={valueClass}>{Print.Name}</span>
+                <span className={valueClass}>{Print?.Name}</span>
               </div>
               <div className={rowClass}>
                 <span className={labelClass}>Email</span>
-                <span className={`${valueClass} break-all`}>{Print.Mail}</span>
+                <span className={`${valueClass} break-all`}>{Print?.Mail}</span>
               </div>
             </div>
           </div>
@@ -103,19 +103,19 @@ export default function SlipPage() {
             <div className={rowClass}>
               <span className={labelClass}>Seats</span>
               <span className="rounded-md bg-slate-900 px-2.5 py-1 text-xs sm:px-3 sm:text-sm font-bold text-white break-words [print-color-adjust:exact] [-webkit-print-color-adjust:exact]">
-                {Print.SeatNo}
+                {Print?.SeatNo}
               </span>
             </div>
 
             {/* Price */}
             <div className={rowClass}>
               <span className={labelClass}>Price per seat</span>
-              <span className={valueClass}>Rs. {Print.Rs}</span>
+              <span className={valueClass}>Rs. {Print?.Rs}</span>
             </div>
             <div className="mt-2 flex items-center justify-between gap-4 border-t border-slate-200 pt-3 sm:pt-4">
               <span className="font-semibold text-slate-900">Total</span>
               <span className="text-lg sm:text-xl font-bold text-blue-500">
-                Rs. {Print.Rs}
+                Rs. {Print?.Rs}
               </span>
             </div>
 

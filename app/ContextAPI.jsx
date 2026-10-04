@@ -45,7 +45,7 @@ function PrintData(data){
     setPrint(data)
     
 }
-  
+   console.log(BookingData)
   return (
     <>
      <SystemContext value={{Name ,  Moviedetails ,  New ,  Seating ,  SeatNo ,  setBookingData ,  BookingDetails  ,  setseats ,  seats  ,  tech ,  BookingData ,  PrintData ,  Print}}>
