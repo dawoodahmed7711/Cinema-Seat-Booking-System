@@ -1,7 +1,7 @@
 'use client'
 import { createContext, useContext, useState } from "react"
 import React from 'react'
-import Data from "./Data/page.jsx"
+import Data from "./Data/data.js"
 export const SystemContext = createContext()
 
 

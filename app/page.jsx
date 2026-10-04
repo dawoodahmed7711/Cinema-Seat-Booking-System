@@ -1,5 +1,5 @@
 'use client'
-import Data from "./Data/page.jsx";
+import Data from "./Data/data.js";
 import {SystemContext} from "./ContextAPI.jsx";
 import { useContext } from "react";
 import Link from "next/link.js";

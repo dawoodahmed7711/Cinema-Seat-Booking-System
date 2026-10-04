@@ -3,6 +3,9 @@ import { useContext, useState } from "react";
 import { SystemContext } from "../ContextAPI.jsx";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
+
+
+
 const labelClass = "mb-1.5 block text-sm font-medium text-slate-700";
 const inputClass =
   "w-full rounded-lg border border-blue-600 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-400 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20";
@@ -10,13 +13,13 @@ const inputClass =
 
 
  function BookingForm() {
-  const router = useRouter();s
+  const router = useRouter();
     const {New ,  SeatNo  ,  BookingDetails ,   tech} = useContext(SystemContext);
     const [FullName , setFullName] = useState("")
     const [Email , setEmail] = useState("")
     const [Moviename ,  setMoviename] = useState('')
     const [Seatno   ,  setSeatno] = useState('')
-    const [Price , setPrice] = useState('500')
+    const [Price , setPrice] = useState('500/')
 
     function Form(e){
        e.preventDefault();
