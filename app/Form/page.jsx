@@ -20,9 +20,12 @@ const inputClass =
     const [Moviename ,  setMoviename] = useState('')
     const [Seatno   ,  setSeatno] = useState('')
     const [Price , setPrice] = useState('500/')
+   
 
     function Form(e){
+     
        e.preventDefault();
+
        if(FullName === '' & Email === '' & Moviename === '' & Seatno === '' ) {
         return;
         }
@@ -39,7 +42,8 @@ const inputClass =
          BookingDetails(Info);
          tech();
        
-         toast.success('Seat Booked ')
+         toast.success('Seat Booked ');
+         
     }
    
 
@@ -155,7 +159,7 @@ const inputClass =
               type="submit"
               className="w-full rounded-lg bg-blue-600 py-3 font-semibold text-white transition hover:bg-[#961a27] focus:outline-none focus:ring-2 focus:ring-[#b3202f]/40 active:scale-[0.98]"
             >
-              Book
+              
             </button>
           </form>
         </div>
